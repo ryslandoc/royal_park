@@ -796,3 +796,75 @@ img {
 }
 
 /*========== MEDIA ==========*/
+
+/* laptops */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  .navbar .navbar-nav {
+    padding-left: 110px;
+
+    li .menu_btn {
+      padding-left: 237px;
+    }
+  }
+
+
+  .header_content {
+    top: -107px;
+    height: 630px;
+
+    .header_info_1 {
+      top: 180px;
+
+      h1 {
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .header_info_2 {
+      top: 160px;
+      left: -40px;
+    }
+  }
+
+  .video {
+    padding-top: 140px;
+
+    .video_main img {
+      width: 43%;
+      top: 140px;
+      left: 45px;
+    }
+
+    .video_main:after {
+      top: 240px;
+      left: 260px;
+      width: 90px;
+      height: 90px;
+      padding: 27px 30px 30px 35px;
+    }
+
+    .video_main:before {
+      top: 88px;
+      left: 160px;
+    }
+  }
+  .choose .col-md-3 div p {
+    padding: 0 15px 0 15px;
+  }
+
+  .gallery .gallery_img .gallery_img_cont {
+    top: 206px;
+  }
+
+  .footer {
+    padding-bottom: 65px;
+
+    .join_form ul li input, .footer .join_form ul li textarea {
+      width: 286px;
+    }
+  }
+}
