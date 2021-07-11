@@ -450,13 +450,16 @@ img {
       top: 261px;
 
 
-      h5 {
-        padding: 28px 0 0 28px;
+      div {
         display: inline-block;
-        font-weight: 500;
-        font-size: 18px;
-        font-family: var(--main-font);
-        color: var(--main-color);
+
+        h5 {
+          padding: 28px 0 0 28px;
+          font-weight: 500;
+          font-size: 18px;
+          font-family: var(--main-font);
+          color: var(--main-color);
+        }
       }
 
       p {
@@ -865,6 +868,248 @@ img {
 
     .join_form ul li input, .footer .join_form ul li textarea {
       width: 286px;
+    }
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar-light .navbar-toggler {
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    top: 26px;
+    right: 26px;
+  }
+
+  .navbar .navbar-brand img {
+    margin: 20px 0 20px 0;
+  }
+
+  .navbar .navbar-nav {
+    padding-left: 0;
+    text-align: center;
+    height: 230px;
+  }
+
+  .navbar .navbar-nav li {
+    padding: 10px 0 0 0;
+  }
+
+  .navbar .navbar-nav li:nth-child(4) {
+    padding: 10px 0 0 0;
+  }
+  .navbar .navbar-nav li .menu_btn a {
+    display: none;
+  }
+
+  .header_content {
+    background-image: url(../images/bg_image_mob.jpg);
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+
+    .header_info_1 {
+      top: 70px;
+
+      div {
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+
+    .header_info_2 {
+      position: relative;
+      margin-top: 20px;
+      top: 90px;
+      left: 0;
+
+      .header_block {
+        display: inline-block;
+        justify-content: unset;
+        align-items: unset;
+        width: 100%;
+        height: 150px;
+        text-align: center;
+
+        div:nth-child(1) {
+          padding-left: 0;
+          padding-right: 15px;
+        }
+
+        div:nth-child(1):before {
+          top: 40px;
+          left: 100px;
+        }
+
+        div:nth-child(2):before {
+          width: 34px;
+          height: 0;
+          top: 40px;
+          left: 210px;
+        }
+
+        div:nth-child(3) {
+          padding-right: 0;
+        }
+
+        div {
+          display: inline-block;
+          padding-right: 15px;
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+
+  .video {
+    padding-top: 120px;
+    padding-bottom: 100px;
+
+    .video_main {
+      padding-top: 60px;
+
+      &:after {
+        top: 238px;
+        left: 145px;
+        width: 70px;
+        height: 70px;
+        padding: 18px 15px 30px 25px;
+      }
+
+      &:before {
+        display: none;
+      }
+
+      img {
+        position: unset;
+
+      }
+    }
+
+    .col-md-6:nth-child(2) div {
+      font-size: 18px;
+      padding-bottom: 15px;
+      padding-top: 40px;
+    }
+
+    .col-md-6:nth-child(2) {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+
+  .choose {
+    padding-bottom: 15px;
+
+    .col-md-3 {
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: center;
+
+      div {
+        width: 300px;
+      }
+    }
+  }
+
+  .gallery {
+    .col-md-6:nth-child(1) {
+      padding-bottom: 50px;
+    }
+
+    p {
+      br {
+        display: none;
+      }
+    }
+
+    .gallery_img {
+      position: relative;
+      padding-bottom: 50px;
+
+      .gallery_img_cont {
+        width: 100%;
+        height: 70px;
+        top: 170px;
+
+
+        div {
+          display: inline-block;
+          width: 123px;
+
+          h5 {
+            padding: 25px 0 0 10px;
+            display: inline-block;
+            font-weight: 500;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .reviews {
+    padding-top: 80px;
+    padding-bottom: 45px;
+
+    .container {
+
+      h2 {
+        padding-bottom: 35px;
+      }
+
+      .reviews_btn {
+        padding-top: 0;
+        position: unset;
+      }
+
+      .reviews_blocs {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .join {
+    text-align: center;
+    padding-bottom: 60px;
+
+    .join_title {
+      h2 {
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .join .join_form ul li input, .join .join_form ul li textarea {
+    margin-bottom: 20px;
+  }
+
+  .join .join_form ul li button {
+    position: unset;
+    left: 0;
+  }
+
+  .footer {
+    padding-bottom: 20px;
+
+    .col-md-5 {
+      display: none;
     }
   }
 }
