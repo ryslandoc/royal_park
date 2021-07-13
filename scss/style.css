@@ -622,6 +622,9 @@ body {
       width: 286px; } }
 /* Mobile */
 @media screen and (max-width: 767px) {
+  body {
+    overflow: hidden; }
+
   .navbar-light .navbar-toggler {
     width: 60px;
     height: 40px;
@@ -672,7 +675,8 @@ body {
         width: 100%;
         height: 150px;
         text-align: center;
-        backdrop-filter: blur(100px); }
+        backdrop-filter: none;
+        background: rgba(255, 255, 255, 0.9); }
         .header_content .header_info_2 .header_block div:nth-child(1) {
           padding-left: 0;
           padding-right: 15px; }
@@ -734,7 +738,8 @@ body {
       width: 100%;
       height: 70px;
       top: 170px;
-      backdrop-filter: blur(100px); }
+      backdrop-filter: none;
+      background: rgba(255, 255, 255, 0.9); }
       .gallery .gallery_img .gallery_img_cont div {
         display: inline-block;
         width: 123px; }
